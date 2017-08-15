@@ -24,6 +24,7 @@
  */
 
 class Bans {
+	// Here I added something
 
 	/* Perform a check for a ban record for a specified IP address */
 	function BanCheck($ip, $board = '', $force_display = false) {
