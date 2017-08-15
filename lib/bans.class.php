@@ -34,6 +34,7 @@ class Bans {
 		}
 
 		$bans = Array();
+		//here I added another thing!
 		$results = $tc_db->GetAll("SELECT * FROM `".KU_DBPREFIX."banlist` WHERE ((`type` = '0' AND ( `ipmd5` = '" . md5($ip) . "' OR `ipmd5` = '". md5($_COOKIE['tc_previousip']) . "' )) OR `type` = '1') AND (`expired` = 0)" );
 		if (count($results)>0) {
 			foreach($results AS $line) {
